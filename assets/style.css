@@ -1,0 +1,253 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: serif;
+  padding-top: 70px;
+}
+
+header {
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  margin-bottom: 20px;
+  background-color: white;
+  border-bottom: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header h1 {
+  display: inline-block;
+}
+
+header .cart {
+  display: inline-block;
+  color: gray;
+  cursor: pointer;
+}
+
+header .cart i {
+  font-size: 3rem;
+}
+
+header .cart span {
+  position: relative;
+  top: -47px;
+  left: 18px;
+  font-size: 10px;
+  color: red;
+  background-color: black;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+}
+
+#app {
+  clear: both;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#app .product-item {
+  border: 1px solid #333;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px 2px gray;
+          box-shadow: 0 0 10px 2px gray;
+  padding: 10px 10px 15px 10px;
+  margin-bottom: 40px;
+  width: calc(25% - 25px);
+  position: relative;
+}
+
+#app .product-item h4 {
+  padding: 5px 0;
+}
+
+#app .product-item img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
+
+#app .product-item .brand {
+  position: relative;
+  top: -15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #fff;
+  text-transform: uppercase;
+  -webkit-box-shadow: 2px 2px 5px 1px gray;
+          box-shadow: 2px 2px 5px 1px gray;
+  font-weight: bold;
+  color: #282a29;
+}
+
+#app .product-item h4.product {
+  margin: 10px 0;
+  height: 50px;
+  text-align: center;
+}
+
+#app .product-item h4.price {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#app .product-item h4.price span {
+  background-color: #ff7f50;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#app .product-item h4.count {
+  text-align: center;
+  padding: 5px 0;
+}
+
+#app .product-item h4.count.red {
+  color: red;
+}
+
+#app .product-item h4.count span {
+  font-weight: bold;
+}
+
+#app .product-item .description {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#app .product-item li {
+  list-style-type: none;
+  padding: 0 0 0 10px;
+}
+
+#app .product-item h4.rate {
+  padding: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#app .product-item .half-vision {
+  opacity: 0.5;
+}
+
+#app .product-item h4.views {
+  text-align: center;
+  font-weight: normal;
+}
+
+#app .product-item h4.views span {
+  font-weight: bold;
+}
+
+#app .product-item h4.buy {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+}
+
+#app .product-item h4.buy button {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #fff;
+  text-transform: uppercase;
+  -webkit-box-shadow: 2px 2px 5px 1px gray;
+          box-shadow: 2px 2px 5px 1px gray;
+  font-weight: bold;
+  display: block;
+  margin: auto;
+  color: #282a29;
+  font-size: 1.1em;
+  background-color: #58cf72;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  #app .product-item {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 768px) {
+  #app .product-item {
+    width: calc(100% - 10px);
+  }
+}
+
+table {
+  border-collapse: collapse;
+  margin: 5px;
+}
+
+table td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+table td button {
+  width: 20px;
+  height: 20px;
+  line-height: 10px;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+table td button.inc {
+  background-color: green;
+}
+
+table td button.dec {
+  background-color: red;
+}
+
+table img {
+  max-width: 30px;
+  max-height: 30px;
+}
+/*# sourceMappingURL=style.css.map */
